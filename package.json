@@ -34,7 +34,10 @@
     "test:staged": "npm test -- --findRelatedTests",
     "test:ci": "npm test -- --coverage",
     "compile": "tsc -w",
-    "init": "node dist/src/main/server/server.js"
+    "init": "node dist/src/main/server/server.js",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
