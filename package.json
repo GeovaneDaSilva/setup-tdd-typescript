@@ -26,7 +26,7 @@
   "scripts": {
     "start": "node dist/main/server/server.js",
     "dev": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules src/main/server/server.ts",
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
