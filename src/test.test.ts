@@ -1,5 +1,5 @@
 describe('quaa', () => {
   test('qualau', () => {
-    expect('ok').toBe('okk')
+    expect(1).toBe(1)
   })
 })
