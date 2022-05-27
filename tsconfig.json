@@ -9,8 +9,12 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "moduleResolution": "node",
+<<<<<<< HEAD
     "forceConsistentCasingInFileNames": true,
     "strict": true
+=======
+    "strict": true,
+>>>>>>> 0de18d53c1dc8ca202fe8084bec57782db0f2279
     /*
     "forceConsistentCasingInFileNames": true,
     "strictNullChecks": true,
