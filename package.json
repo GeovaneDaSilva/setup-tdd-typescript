@@ -32,7 +32,7 @@
     "test:unit": "npm test -- --watch -c jest-unit-config.js",
     "test:int": "npm test -- --watch -c jest-int-config.js",
     "test:staged": "npm test -- --findRelatedTests",
-    "test:ci": "npm test -- --coverage",
+    "test:coverage": "npm test -- --coverage",
     "compile": "tsc -w",
     "init": "node dist/src/main/server/server.js",
     "lint": "eslint .",
