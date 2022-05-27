@@ -1,7 +1,7 @@
 # SetUp Clean Architecture - TDD
 
 
-##### VsCode extentions 
+##### VsCode extentions
 ```
 {
     "workbench.iconTheme": "vscode-icons",
