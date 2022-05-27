@@ -2,6 +2,7 @@
 
 
 ##### VsCode extentions 
+```
 {
     "workbench.iconTheme": "vscode-icons",
     "window.zoomLevel": 1,
@@ -19,3 +20,5 @@
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.compactFolders": false
 }
+
+```
