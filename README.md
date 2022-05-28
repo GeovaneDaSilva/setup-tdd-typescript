@@ -1,7 +1,14 @@
 # SetUp Clean Architecture - TDD
 
+##### Execut tests unit and CI
+```
+jest-ci.config.js  = ` npm run test:ci ` .test
+jest-unit.config.js  = ` npm run test:unit ` .spec
 
-##### VsCode extentions Open Settings Json CRTL Shift + p 
+```
+
+
+##### Vscode extentions open settings json CRTL Shift + p 
 ```
 {
     "editor.codeActionsOnSave": {
