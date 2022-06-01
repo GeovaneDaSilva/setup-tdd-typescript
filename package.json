@@ -26,15 +26,18 @@
   "scripts": {
     "start": "node dist/main/server/server.js",
     "dev": "ts-node-dev --transpile-only --respawn --ignore-watch node_modules src/main/server/server.ts",
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc -p tsconfig-build.json",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
-    "test:unit": "npm test -- --watch -c jest-unit-config.js",
-    "test:int": "npm test -- --watch -c jest-int-config.js",
+    "test:unit": "npm test -- --watch -c jest-unit.config.js",
+    "test:ci": "npm test -- --watch -c jest-ci.config.js",
     "test:staged": "npm test -- --findRelatedTests",
-    "test:ci": "npm test -- --coverage",
+    "test:coverage": "npm test -- --coverage",
     "compile": "tsc -w",
-    "init": "node dist/src/main/server/server.js"
+    "init": "node dist/src/main/server/server.js",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
