@@ -6,8 +6,8 @@
 * [Description of the project](#description-of-the-project)
 * [Extensions vscode](#extensions-vscode)
 * [Jest tests](#jest-tests)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias utilizadas](#tecnologias-utilizadas)
+* [Snippets](#snippets)
+* [Git Aliases](#git-aliases)
 * [Pessoas Contribuidoras](#pessoas-contribuidoras)
 * [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
 * [Licença](#licença)
@@ -29,6 +29,55 @@ jest-unit.config.js  = ` npm run test:unit ` .spec
 
 ```
 
+## Snippets 
+```
+CTRL + SHIFT + P > Configure User Snippets
+
+{
+  "Jest Test": {
+    "prefix": ["jestTest"],
+    "body": [
+      "describe('', () => {",
+      "  it('', () => {",
+      "",
+      "  })",
+      "})",
+      ""
+    ],
+    "description": "A describe block for Jest"
+  }
+}
+
+```
+
+## Git Aliases 
+
+```
+Configure with Vs Code => git config --global core.editor code
+Configure with Nano => git config --global core.editor nano
+
+Copy and Paste
+
+[user]
+	email = geovaneartedesign@gmail.com
+	name = Geovane Da Silva
+[push]
+	followTags = true
+[core]
+	editor = code --wait
+[alias]
+
+s = !git status -s
+
+c = !git add --all && git commit -m
+
+b = !git branch -- git branch
+
+amend = !git add . && git commit --amend --no-edit
+
+l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s - %C(cyan)%cn, %C(green)%cr'
+
+```
 
 ## Extensions vscode
 ```
