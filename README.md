@@ -55,6 +55,7 @@ CTRL + SHIFT + P > Configure User Snippets
 ```
 Configure with Vs Code => git config --global core.editor code
 Configure with Nano => git config --global core.editor nano
+To Open file => git config --global --edit nano
 
 Copy and Paste
 
