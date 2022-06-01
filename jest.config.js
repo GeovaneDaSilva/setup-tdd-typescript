@@ -6,10 +6,10 @@ module.exports = {
   roots: [
     '<rootDir>/src',
     '<rootDir>/tests'
-],
+  ],
   modulePathIgnorePatterns: ['<rootDir>/src/interfaces'],
   transform: {
     '.+\\.ts$': 'ts-jest'
-  },
+  }
 
 }
