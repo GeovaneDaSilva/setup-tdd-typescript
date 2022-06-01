@@ -1,17 +1,6 @@
 import { AuthenticationError } from '../../../src/domain/errors'
 import { FacebookAuthentication } from '../../../src/domain/features'
-
-namespace LoadFacebookUserApi {
-  export type Params = {
-    token: string
-  }
-
-  export type Result = undefined
-}
-
-interface LoadFacebookUserApi {
-  loadUserByToken: (params: LoadFacebookUserApi.Params) => Promise<LoadFacebookUserApi.Result>
-}
+import { LoadFacebookUserApi } from '../../../src/data/contracts/api'
 
 class FacebookAuthenticationService {
   constructor (private readonly loadFacebookUserByTokenApi: LoadFacebookUserApi) {
